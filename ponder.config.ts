@@ -4,13 +4,11 @@ import { erc20ABI } from "./abis/erc20ABI";
 export default createConfig({
   database: {
     kind: "postgres",
-    connectionString: "postgresql://postgres:postgres@localhost:5432/ponder",
   },
   chains: {
     arbitrumSepolia: {
       id: 421614,
       rpc: "https://arbitrum-sepolia-rpc.publicnode.com",
-      disableCache: true,
     },
   },
   contracts: {
